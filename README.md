@@ -1,4 +1,4 @@
-# 🪚 Chainsaw Audio Classifier
+# Chainsaw Audio Classifier
 
 A convolutional neural network that detects **chainsaw sounds** in audio recordings. This repo is a production-ready Python package designed to help **detect and curb illegal logging** in remote forests.
 
@@ -6,19 +6,19 @@ A convolutional neural network that detects **chainsaw sounds** in audio recordi
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎧 **Audio → Mel-spectrogram** feature pipeline powered by `librosa`
-- 🧠 **3-block CNN** (~110k params) trained end-to-end on log-mel features
-- 📦 Clean **Python package** layout (no notebook magic, no Colab-only paths)
-- 🛠️ Configurable via CLI flags **and** a typed config object
-- 💾 Checkpointed weights, JSON metrics, and loss-curve plots on every training run
-- 🧪 `pytest` smoke tests + feature tests
-- 🖥️ Console scripts: `chainsaw-train` and `chainsaw-predict`
+-  **Audio → Mel-spectrogram** feature pipeline powered by `librosa`
+-  **3-block CNN** (~110k params) trained end-to-end on log-mel features
+-  Clean **Python package** layout (no notebook magic, no Colab-only paths)
+-  Configurable via CLI flags **and** a typed config object
+-  Checkpointed weights, JSON metrics, and loss-curve plots on every training run
+-  `pytest` smoke tests + feature tests
+-  Console scripts: `chainsaw-train` and `chainsaw-predict`
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 chainsaw-classifier/
@@ -51,7 +51,7 @@ chainsaw-classifier/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install
 
@@ -112,7 +112,7 @@ CLI options:
 
 ```bash
 chainsaw-predict path/to/clip.wav
-# ✅ No chainsaw detected  (Non-Chainsaw) in clip.wav
+#  No chainsaw detected  (Non-Chainsaw) in clip.wav
 
 chainsaw-predict path/to/clip.wav --quiet
 # Non-Chainsaw
@@ -133,7 +133,7 @@ print(label)  # "Chainsaw" or "Non-Chainsaw"
 
 ---
 
-## 🧠 How it Works
+##  How it Works
 
 1. **Load** audio at 22,050 Hz, pad/truncate to 4 seconds.
 2. Compute a **64-band log-Mel spectrogram** with `n_fft=1024`, `hop_length=512`.
@@ -156,16 +156,16 @@ Chainsaws produce distinctive harmonic and broadband noise patterns that map cle
 
 ---
 
-## 🛡️ Use Cases
+##  Use Cases
 
-- 🌲 **Forest ranger alerts** — passive acoustic monitoring at the edge
-- 🛰️ **Acoustic sensor networks** — flag chainsaw events in real time
-- 🪵 **Supply-chain auditing** — screen audio evidence of illegal harvesting
-- 🧪 **Research baseline** — reproducible starting point for environmental audio ML
+-  **Forest ranger alerts** — passive acoustic monitoring at the edge
+-  **Acoustic sensor networks** — flag chainsaw events in real time
+-  **Supply-chain auditing** — screen audio evidence of illegal harvesting
+-  **Research baseline** — reproducible starting point for environmental audio ML
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 pip install -e .[dev]
@@ -176,7 +176,7 @@ Tests run without GPU, without audio files, and without any model weights.
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Replace fixed FC flatten size with adaptive pooling
 - [ ] Add data augmentation (time-stretch, pitch-shift, mixup)
@@ -186,13 +186,13 @@ Tests run without GPU, without audio files, and without any model weights.
 
 ---
 
-## 📄 License
+##  License
 
 Released under the [MIT License](LICENSE). © 2026 Dean Harron.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 - [librosa](https://librosa.org/) — audio feature extraction
 - [PyTorch](https://pytorch.org/) — deep learning framework
