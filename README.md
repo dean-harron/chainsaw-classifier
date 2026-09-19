@@ -198,4 +198,4 @@ Released under the [MIT License](LICENSE). © 2026 Dean Harron.
 - [PyTorch](https://pytorch.org/) — deep learning framework
 - [scikit-learn](https://scikit-learn.org/) — evaluation metrics
 
-> **Conservation impact:** Every illegal logging event caught early is a habitat preserved. If this tool helps your project, please ⭐ the repo and share your results.
+> **Conservation impact:** Every illegal logging event caught early is a habitat preserved. If this tool helps your project, please star the repo and share your results.
